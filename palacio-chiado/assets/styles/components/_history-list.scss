@@ -1,0 +1,134 @@
+/*------------------------------------*\
+    #HISTORY-LIST
+\*------------------------------------*/
+.history-list {
+	padding-bottom: 150px;
+}
+
+	.history-list__item {
+		position: relative;
+		max-width: 1080px;
+		margin: 0 auto;
+		padding-top: 100px;
+		z-index: 1;
+
+		&:after {
+			content: '';
+			display: block;
+			height: 76px;
+			width: 0;
+			margin: 0 auto;
+			border: 1px solid $gold-light;
+		}
+
+		&:before {
+			content: attr(data-date);
+			position: absolute;
+			top: 80px;
+			right: 0;
+			left: 0;
+			display: block;
+			font: 285px 'sangbleu_bplight';
+			color: #28201e;
+			opacity: 0.5;
+			z-index: -1;
+		}
+
+		&:last-child {
+			&:after {
+				display: none;
+			}
+		}
+
+		&:nth-of-type(even) {
+			img {
+				right: 0;
+
+				@include media-query(lap) {
+					right: 20px;
+				}
+			}
+		}
+
+		&:nth-of-type(odd) {
+			img {
+				left: 0;
+
+				@include media-query(lap) {
+					left: 20px;
+				}
+			}
+		}
+
+		img {
+			position: absolute;
+			top: 50px;
+			bottom: 0;
+			margin: auto;
+			z-index: -1;
+			transition: transform 0.2s;
+
+			@include media-query(portable) {
+				max-width: 300px;
+				max-height: 300px;
+			}
+
+			@include media-query(palm) {
+		    position: relative;
+		    top: 40px;
+		    left: auto;
+		    margin-bottom: 20px;
+			}
+		}
+
+		&.active {
+			.history-list__year:before {
+				width: 195px;
+			}
+
+			img {
+				transform: translateY(-50px);
+			}
+		}
+	}
+
+		.history-list__year {
+			position: relative;
+		  margin-bottom: 5px;
+			font: 62px 'sangbleu_bplight';
+		  line-height: 1em;
+		  letter-spacing: 2px;
+			color: $gold-light;
+
+			&:before {
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				display: block;
+				width: 0;
+				border-top: 2px solid #fff;
+				transform: translateX(-50%);
+				transition: width 0.3s;
+			}
+		}
+
+		.history-list__date {
+			margin-bottom: 15px;
+			font-size: 18px;
+			font-weight: 500;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			color: #fff;
+		}
+
+		.history-list__description {
+			max-width: 540px;
+			margin: 0 auto 35px;
+			color: $grey-text-light;
+
+			@include media-query(palm) {
+				padding: 0 10px;
+				font-size: 14px;
+			}
+		}

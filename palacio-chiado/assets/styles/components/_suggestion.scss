@@ -1,0 +1,168 @@
+/*------------------------------------*\
+    #SUGGESTION
+\*------------------------------------*/
+.suggestion {
+	position: relative;
+		
+	@include media-query(desk) {
+		height: 580px;
+	}
+}
+
+	.suggestion__content {
+		background-color: #fff;
+		position: relative;
+		height: 100%;
+		padding-top: 10px;
+		text-align: center;
+		z-index: 1;
+		
+		@include media-query(desk) {
+			float: left;
+			width: 25%;
+			min-width: 340px; 
+		}
+		
+		@include media-query(lap) {
+			height: 270px;
+			padding: 30px 20px;
+		}
+		
+		@include media-query(palm) {
+			padding: 20px 10px 30px;
+		}
+
+		h2 {
+			max-width: 340px;
+			margin: 0 auto 15px;
+			font-weight: 600;
+		}
+	}
+
+		.suggestion__header {
+			margin-bottom: 45px;
+			font-size: 14px;
+			font-weight: 500;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			color: $gold-light;
+		
+			@include media-query(portable) {
+				margin-bottom: 10px;
+			}
+		}
+
+		.suggestion__info {
+			@include media-query(portable) {
+				display: inline-block;
+				margin-left: 20px;
+		    vertical-align: middle;
+			}
+		}
+
+		.suggestion__date {
+			position: relative;
+			margin-bottom: 30px;
+		
+			@include media-query(lap) {
+				display: inline-block;
+		    margin-bottom: 0;
+		    vertical-align: middle;
+			}
+
+			&:after {
+				content: '...';
+				position: absolute;
+				bottom: 0;
+				display: block;
+				width: 100%;
+				font-size: 35px;
+				color: $gold;
+		
+				@include media-query(palm) {
+					bottom: -20px;
+				}
+			}
+
+			.suggestion__date-month {
+				position: absolute;
+				top: 105px;
+				width: 100%;
+				font-size: 25px;
+				font-weight: 600;
+				color: $gold;
+				text-transform: uppercase;
+				letter-spacing: 4px;
+		
+				@include media-query(lap) {
+    			top: 85px;
+				}
+		
+				@include media-query(palm) {
+    			top: 60px;
+    			font-size: 18px;
+				}
+			}
+
+			.suggestion__date-day {
+				font-size: 150px;
+				font-weight: 100;
+		
+				@include media-query(portable) {
+    			line-height: 1.2em;
+				}
+		
+				@include media-query(palm) {
+    			font-size: 100px;
+				}
+			}
+		}
+
+		.suggestion__text {
+			max-width: 320px;
+			margin: 0 auto 40px;
+			color: $grey-text;
+		
+			@include media-query(palm) {
+  			margin-bottom: 25px;
+			}
+		}
+
+	.suggestion__image {
+		background-size: cover;
+		background-position: center;
+		height: 340px;
+
+		@include media-query(desk) {
+			position: absolute;
+			right: 0;
+			height: 100%;
+			width: 75%;
+		}
+	}
+
+.suggestion--single {
+		
+	@include media-query(desk) {
+		height: 550px;
+	}
+
+	.suggestion__content {
+		padding-top: 115px;
+		
+		@include media-query(portable) {
+			height: auto;
+			padding-top: 20px;
+		}
+
+		h2 {
+			max-width: 300px;
+		}
+	}
+
+	.suggestion__text {
+		@include media-query(portable) {
+			margin-bottom: 30px;
+		}
+	}
+}

@@ -1,0 +1,160 @@
+/*------------------------------------*\
+    #SCROLL-DOWN LINK
+\*------------------------------------*/
+@keyframes scrollEffect {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(3px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes scrollEffectMobile {
+  0% {
+    opacity: 1;
+    bottom: 0;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  60% {
+    bottom: 8px;
+    opacity: 0;
+  }
+
+  99% {
+    bottom: 0;
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes arrowDown {
+  0% {
+    bottom: 0;
+  }
+
+  50% {
+    bottom: -3px;
+  }
+
+  100% {
+    bottom: 0;
+  }
+}
+
+.scroll-down {
+  position: relative;
+  height: 140px;
+  width: 50px;
+  margin: 30px auto 0;
+  text-align: center;
+  opacity: 1;
+  z-index: 3;
+  transition: opacity 0.4s;
+
+  @include media-query(desk) {
+    &:hover {
+      .scroll-down__link {
+        animation-name: scrollEffect;
+        animation-duration: 0.3s;
+        animation-iteration-count: 2;
+      }
+
+      .scroll-down__icon {
+        animation-name: arrowDown;
+        animation-duration: 0.2s;
+        animation-iteration-count: 3;
+      }
+    }
+  }
+
+  &.active {
+    opacity: 0;
+    transition: opacity 0.4s 0.8s;
+
+    .scroll-down__link {
+      bottom: 115px;
+    }
+  }
+}
+
+	.scroll-down__line {
+		display: block;
+		height: 80px;
+		width: 0;
+		margin: 0 auto;
+		border-right: 2px dotted $gold;
+    
+    @include media-query(portable) {
+      display: none;
+    }
+	}
+
+	.scroll-down__link {
+    position: absolute;
+    bottom: 15px;
+    display: block;
+    height: 44px;
+    width: 100%;
+    padding: 8px;
+		font-size: 28px;
+    color: #fff;
+    transition: bottom 0.8s;
+
+    @include media-query(portable) {
+      bottom: 0;
+      animation-name: scrollEffectMobile;
+      animation-duration: 1.5s;
+      animation-iteration-count: infinite;
+    }
+	}
+
+  .scroll-down__link--desk {
+    @include media-query(portable) {
+      display: none;
+    }
+  }
+
+  .scroll-down__link--mobile {
+    @include media-query(desk) {
+      display: none;
+    }
+  }
+
+	.scroll-down__icon {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    color: $gold;
+
+    @include media-query(portable) {
+      bottom: 40px;
+      font-size: 32px;
+      color: $gold;
+    }
+  }
+
+  .scroll-down__icon--desk {
+    @include media-query(portable) {
+      display: none;
+    }
+  }
+
+  .scroll-down__icon--mobile {
+    @include media-query(desk) {
+      display: none;
+    }
+  }

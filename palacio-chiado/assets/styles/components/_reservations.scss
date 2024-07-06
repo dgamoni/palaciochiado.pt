@@ -1,0 +1,19 @@
+/*------------------------------------*\
+    #RESERVATIONS	
+\*------------------------------------*/
+.reservations {
+	position: relative;
+	background: url("../images/form_bg.png") center top;
+	margin-top: -60px;
+	padding: 100px 0 50px;
+	text-align: center;
+	z-index: 2;
+
+	h2 {
+		letter-spacing: 2px;
+	}
+
+	p {
+		color: $grey-text;
+	}
+}

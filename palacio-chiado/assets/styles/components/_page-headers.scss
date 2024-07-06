@@ -1,0 +1,439 @@
+/*------------------------------------*\
+    #PAGE-HEADERS
+\*------------------------------------*/
+.header {
+	background-position: center;
+	position: relative;
+	text-align: center;
+}
+
+.header--home {
+	background-size: cover;
+	height: 768px;
+	overflow: hidden;
+
+	@include media-query(lap) {
+		height: 580px;
+	}
+
+	@include media-query(palm) {
+		height: 460px;
+	}
+
+	h2 {
+		margin-bottom: 30px;
+    letter-spacing: 4px;
+    font-weight: 600;
+    color: $gold-dark;
+	}
+
+	img {
+		display: block;
+		margin-bottom: 26px;
+
+		@include media-query(lap) {
+			width: 600px;
+		}
+
+		@include media-query(palm-landscape) {
+			width: 460px;
+		}
+
+		@include media-query(palm-portrait) {
+			width: 300px;
+		}
+	}
+
+	.btn {
+		border-color: $gold-dark;
+
+		&:hover {
+			background-color: $gold-dark;
+		}
+	}
+
+	.scroll-down {
+		position: absolute;
+		right: 0;
+		bottom: 65px;
+		left: 0;
+		height: 120px;
+		margin: auto;
+
+		@include media-query(portable) {
+			height: 80px;
+		}
+
+		@include media-query(palm) {
+			bottom: 40px;
+		}
+	}
+
+		.scroll-down__line {
+			height: 60px;
+			border-color: $gold-dark;
+		}
+
+		.scroll-down__icon {
+			color: #fff;
+
+			@include media-query(portable) {
+				color: $gold-dark;
+			}
+		}
+}
+
+	.header__container {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		width: 100%;
+		height: 100%;
+		opacity: 1;
+    transition: opacity .6s;
+    overflow: hidden;
+
+    &.closed {
+    	opacity: 0;
+    }
+	}
+
+.header--simple {
+	position: relative;
+	height: 655px;
+
+	&:after {
+		content: '';
+		background-image: url("../images/border_shape_bottom.png");
+		position: absolute;
+    bottom: -58px;
+		display: block;
+    height: 59px;
+    width: 100%;
+	}
+
+	p {
+		max-width: 490px;
+		margin: 0 auto;
+		color: $grey-text;
+
+		@include media-query(palm) {
+			padding: 0 15px;
+		}
+	}
+
+	.scroll-down__link {
+    color: $grey-dark;
+	}
+}
+
+	.header--restaurants {
+		padding-top: 120px;
+
+		img {
+	    position: relative;
+	    z-index: 1;
+	  }
+
+		h2 {
+			margin-top: -68px;
+	    margin-bottom: 6px;
+	    letter-spacing: 6px;
+
+			@include media-query(palm) {
+				margin-top: -38px;
+	    	letter-spacing: 2px;
+			}
+		}
+	}
+
+	.header--bars {
+		padding-top: 325px;
+
+		.header__image-container {
+	    position: absolute;
+	    top: -60px;
+	    height: 100%;
+	    width: 100%;
+	    overflow: hidden;
+		}
+
+		img {
+			@include media-query(portable) {
+		    position: relative;
+		    left: 50%;
+		    transform: translateX(-50%);
+	 		}
+	  }
+
+	  h2, p {
+	  	position: relative;
+	  	z-index: 1;
+	  }
+
+	  h2 {
+	  	margin-bottom: 5px;
+	  	letter-spacing: 8px;
+	  }
+	}
+
+.header--history {
+	background: url("../images/history_bg.jpg") no-repeat center / cover;
+	height: 700px;
+  padding-top: 185px;
+
+  h2 {
+  	margin-bottom: 10px;
+  }
+}
+
+	.header--history__text {
+  	max-width: 530px;
+  	margin: 0 auto 45px;
+	}
+
+.header--image {
+	background-size: cover;
+	background-position: center;
+	height: 700px;
+  padding-top: 265px;
+
+  h2 {
+		display: inline-block;
+    margin-bottom: 5px;
+  }
+
+  p {
+    letter-spacing: 2px;
+  }
+}
+
+.header--image-events {
+	height: 525px;
+  padding-top: 135px;
+}
+
+	.header__nav {
+		background-color: rgba(255, 255, 255, 0.9);
+		position: absolute;
+		top: 63px;;
+		width: 100%;
+		font-size: 35px;
+		text-transform: uppercase;
+		text-align: center;
+		color: $grey-darker;
+		z-index: 1;
+
+		@include media-query(portable) {
+			top: 72px;
+		}
+
+		p {
+			display: inline-block;
+			font-family: 'sangbleu_bplight';
+			margin: 0 25px;
+			line-height: 100px;
+			vertical-align: middle;
+
+			@include media-query(portable) {
+				line-height: 80px;
+			}
+		}
+
+		a {
+			display: inline-block;
+	    width: 20px;
+	    height: 20px;
+			font-size: 16px;
+			color: $gold-light;
+		}
+
+		.header__nav-prev {
+			transform: rotate(90deg);
+		}
+
+		.header__nav-next {
+			transform: rotate(-90deg);
+		}
+	}
+
+	.header__video {
+	  width: 100%;
+	  min-height: 100%;
+	  position: absolute;
+	  left: 0px;
+	  top: 50%;
+	  transform: translate(0%, -50%);
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0,0.5);
+		}
+
+		&:before {
+		  content: '';
+		  display: block;
+		  height: 0px;
+		  padding-bottom: 56.25%; 
+		}
+
+		video {
+		  width: auto;
+		  height: 100%;
+		  position: absolute;
+		  top: 0px;
+		  left: 50%;
+		  transform: translate(-50%, 0%);
+		}
+	}
+
+	.header__main-video {
+	  position: relative;
+	  z-index: 0;
+	  height: 100%;
+    opacity: 0;
+    transition: opacity .5s;
+
+		@include media-query(palm) {
+	  	max-height: 580px;
+		}
+
+		@include media-query(palm) {
+	  	max-height: 580px;
+		}
+
+    &.opened {
+    	z-index: 3;
+    	opacity: 1;
+    }
+
+    .video {
+    	position: absolute;
+    	top: 50%;
+    	left: 50%;
+    	min-width: 1240px;
+    	width: 100%;
+    	height: 100%;
+    	transform: translate(-50%, -50%);
+    }
+  }
+
+  	.close-video {
+  		position: absolute;
+  		top: 30px;
+  		right: 30px;
+  		z-index: 2;
+  		font-size: 30px;
+  		color: #fff;
+  	}
+
+/* Bottom Section */
+.header-bottom {
+	text-align: center;
+}
+
+.header-bottom--simple {
+	background: url("../images/palacio_bg.jpg") no-repeat center / cover;
+	height: 540px;
+	padding-top: 112px;
+	text-align: center;
+
+	@include media-query(palm) {
+    height: 80vw;
+    max-height: 540px;
+	}
+}
+
+.header-bottom--big {
+	height: 70vw;
+	max-height: 780px;
+	padding-top: 92px;
+	margin-bottom: 180px;
+
+	@include media-query(palm) {
+    height: 250vw;
+    max-height: 1300px;
+	}
+
+	@include media-query(palm-portrait) {
+    height: auto;
+    max-height: initial;
+		margin-bottom: 140px;
+	}
+
+	.header-bottom__title {
+		max-width: 530px;
+	}
+}
+
+.header-bottom--no-height {
+	height: auto;
+	padding-top: 92px;
+
+	@include media-query(palm) {
+    max-height: initial;
+		padding-top: 40px;
+	}
+}
+
+.header-bottom--image {
+	position: relative;
+	padding: 65px 0 100px;
+
+	@include media-query(palm) {
+		padding: 25px 20px 80px;
+	}
+
+	&:before {
+		content: '';
+		background-image: url("../images/border_shape_top.png");
+    background-position: 0;
+		position: absolute;
+		top: -58px;
+		left: 0;
+		display: block;
+		height: 59px;
+		width: 100%;
+	}
+
+  h2 {
+  	max-width: 680px;
+  	margin-bottom: 25px;
+  	font-weight: 300;
+  	line-height: 1.2em;
+  }
+
+	p {
+		max-width: 490px;
+		margin: 0 auto;
+		line-height: 1.8em;
+		color: $grey-text;
+	}
+}
+
+	.header-bottom__title {
+		margin: 5px auto 0;
+		font-size: 21px;
+		text-transform: uppercase;
+		color: $gold-light;
+		letter-spacing: 2px;
+
+		@include media-query(palm) {
+			padding: 0 15px;
+			font-size: 18px;
+		}
+
+		@include media-query(palm-portrait) {
+			font-size: 16px;
+		}
+	}
+
+	.header-bottom__title--big {
+		font-size: 28px;
+	}

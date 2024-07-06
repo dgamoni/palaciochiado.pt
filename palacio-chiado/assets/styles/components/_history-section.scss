@@ -1,0 +1,19 @@
+/*------------------------------------*\
+    #HISTORY-SECTION
+\*------------------------------------*/
+.history-content {
+	background: $grey-darker url("../images/history_bg2.png") no-repeat center;
+	position: relative;
+	text-align: center;
+
+	&:before {
+		content: '';
+		background-image: url("../images/border_shape_top_black.png");
+		position: absolute;
+		top: -60px;
+		left: 0;
+		display: block;
+		height: 60px;
+		width: 100%;
+	}
+}

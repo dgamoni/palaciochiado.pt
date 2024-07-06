@@ -1,0 +1,152 @@
+/*------------------------------------*\
+    #Partners
+\*------------------------------------*/
+.partners-container {
+	position: relative;
+	margin-bottom: -50px;
+	padding: 145px 0 174px;
+	text-align: center;
+	background: #151515 url('../images/partners_bg.jpg') no-repeat center top;
+	z-index: 2;
+
+	&:before {
+		position: absolute;
+		bottom: -68px;
+		display: block;
+		height: 70px;
+		width: 100%;
+		background: url('../images/partners_bg_bottom.png') center bottom;
+		content: '';
+	}
+
+	@include media-query(portable) {
+		background-size: cover;
+		padding: 120px 0 160px;
+	}
+
+	h2 {
+		margin-bottom: 5px;
+		font-weight: 400;
+	}
+
+	p {
+		max-width: 540px;
+		margin: 0 auto;
+		color: $grey-text;
+	}	
+}
+
+	.partners {
+		margin-top: 65px;
+
+		h3 {
+			font-weight: 400;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			color: $gold-nav;
+		}
+	}
+
+		.partners__list {
+			max-width: 960px;
+			margin: 15px auto 0;
+		}
+
+			.partners__list-item {
+				position: relative;
+				display: inline-block;
+				margin-right: 32px;
+				margin-bottom: 24px;
+
+				@include media-query(lap) {
+    			margin-right: 3vw;
+    		}
+
+				@include media-query(palm) {
+    			margin-right: 5vw;
+    		}
+
+				&:after {
+					content: '';
+					background-color: $gold-light;
+					position: absolute;
+					top: 0;
+					right: -18px;
+					bottom: 0;
+					display: block;
+					height: 3px;
+					width: 3px;
+					margin: auto;
+
+					@include media-query(lap) {
+	    			right: -1.8vw;
+	    		}
+
+					@include media-query(palm) {
+	    			right: -3.5vw;
+	    		}
+				}
+
+				&:nth-of-type(4n), &:last-child {
+					margin-right: 0;
+
+					&:after {
+						display: none;
+					}
+				}
+
+				@include media-query(palm) {
+					&:nth-of-type(even) {
+						margin-right: 0;
+
+						&:after {
+							display: none;
+						}
+					}
+				}
+
+				a {
+					background-color: $grey-dark;
+					display: block;
+					height: 210px;
+					width: 210px;
+					transition: all 0.4s;
+
+					@include media-query(portable) {
+						max-height: 200px;
+						max-width: 200px;
+					}
+
+					@include media-query(lap) {
+						height: 20.5vw;
+						width: 20.5vw;
+					}
+
+					@include media-query(palm) {
+						height: 41vw;
+						width: 41vw;
+					}
+
+					&:hover {
+						transform: translateZ(0) scale(1.05);
+						backface-visibility: hidden;
+						box-shadow: 0 0 50px 5px #000;
+
+						img {
+							transform: translateZ(0) scale(1);
+						}
+					}
+
+					img {
+						transition: all 0.4s;
+
+						@include media-query(desk) {
+							transform: translateZ(0) scale(0.95);
+						}
+						
+						@include media-query(portable) {
+							width: 100%;
+						}
+					}
+				}
+			}

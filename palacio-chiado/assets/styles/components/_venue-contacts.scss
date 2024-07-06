@@ -1,0 +1,69 @@
+/*------------------------------------*\
+    #VENUE-CONTACTS
+\*------------------------------------*/
+.venue-contacts {
+
+  & ~ h3 {
+    padding-top: 80px;
+
+    @include media-query(palm) {
+      padding-top: 60px;
+    }
+  }
+}
+
+  .venue-contacts__list {
+    margin-top: 48px;
+    margin-bottom: 60px;
+    line-height: 0.9em;
+
+    @include media-query(palm) {
+      margin-top: 30px;
+    }
+
+    @include media-query(palm-portrait) {
+      margin-bottom: 40px;
+    }
+
+    li {
+      display: inline-block;
+      padding: 0 55px 0 51px;
+      border-right: 1px solid $grey-mid;
+
+      @include media-query(lap) {
+        padding: 0 35px 0 31px;
+      }
+
+      @include media-query(palm) {
+        display: block;
+        margin-bottom: 30px;
+        padding: 0;
+        border-right: none;
+      }
+
+      &:last-child {
+        border-right: none;
+
+        @include media-query(palm) {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+    .venue-contacts__label {
+      margin-bottom: 15px;
+      font-size: 14px;
+      font-weight: 700;
+      color: $gold-nav;
+      text-transform: uppercase;
+
+      @include media-query(palm) {
+        margin-bottom: 10px;
+      }
+    }
+
+    .venue-contacts__field {
+      font-size: 14px;
+      color: #fff;
+    }

@@ -1,0 +1,35 @@
+/*------------------------------------*\
+    #BUTTONS
+\*------------------------------------*/
+.btn {
+	display: inline-block;
+  padding: 0 11px;
+	border: 2px solid $gold;
+	border-radius: 14px;
+	font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  transition: background 0.4s, color 0.4s, transform 0.1s;
+
+  &:hover {
+  	background-color: $gold;
+  	color: #000;
+  }
+
+  &:active {
+  	transform: scale(0.95);
+  }
+}
+
+.btn--main {
+	min-width: 122px;
+  padding: 0 22px;
+	font-style: italic;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.btn--white {
+	color: #fff;
+}

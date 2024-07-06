@@ -1,0 +1,73 @@
+/*------------------------------------*\
+    #PAGE-CONTACTS
+\*------------------------------------*/
+.page-contacts {
+	background: url("../images/contacts_bg.jpg") no-repeat center / cover;
+	padding: 155px 0 110px;
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+
+	.title {
+		letter-spacing: 6px;
+	}
+
+	.title--small {
+		letter-spacing: 2px;
+	}
+}
+
+	.page-contacts__title {
+		font-size: 14px;
+		font-weight: 800;
+		text-transform: uppercase;
+	}
+
+	.page-contacts__content {
+		letter-spacing: 1px;
+	}
+
+	.contacts-list {
+		margin-top: 55px;
+	}
+
+		.contacts-list__item {
+			display: inline-block;
+			margin: 0 22px;
+
+			@include media-query(lap) {
+				margin: 0 17px;
+			}
+
+			@include media-query(palm) {
+				display: block;
+				margin: 0 auto 25px;
+			}
+		}
+
+
+	.contacts-location {
+		margin-top: 130px;
+
+		@include media-query(palm) {
+			margin-top: 80px;
+		}
+
+		h2 {
+	    margin-bottom: 12px;
+	  }
+
+	  p {
+	  	margin-bottom: 16px;
+	  }
+	}
+
+		.contacts-location__icon {
+			background: linear-gradient(135deg,  #dab974 35%, #a58642 50%, #dab974 65%); 
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			display: inline-block;
+			margin-bottom: 6px;
+			font-size: 50px;
+			color: $gold-light;
+		}

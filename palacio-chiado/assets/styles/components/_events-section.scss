@@ -1,0 +1,42 @@
+/*------------------------------------*\
+    #EVENTS-SECTION
+\*------------------------------------*/
+.events-container {
+	background: url("../images/events_bg.png") no-repeat center bottom;
+	background-color: $dark-white;
+	position: relative;
+	padding: 10px 0 320px;
+	text-align: center;
+
+	@include media-query(palm) {
+		padding: 10px 15px 120px;
+	}
+
+	&:before {
+		content: '';
+		background-image: url("../images/slider_border_up.png");
+    background-position: 0;
+		position: absolute;
+		top: -70px;
+		left: 0;
+		display: block;
+		height: 70px;
+		width: 100%;
+		z-index: 1;
+	}
+
+	h2 {
+		max-width: 400px;
+		margin: 0 auto 30px;
+		font-weight: 300;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		color: $gold-light;
+	}
+
+	.events-text {
+		max-width: 470px;
+		margin: 0 auto;
+		color: $grey-text;
+	}
+}

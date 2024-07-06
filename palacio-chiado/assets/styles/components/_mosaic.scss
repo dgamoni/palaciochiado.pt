@@ -1,0 +1,41 @@
+/*------------------------------------*\
+    #MOSAIC
+\*------------------------------------*/
+.mosaic {
+	li {
+		position: relative;	
+		display: inline-block;
+    height: 45.7vw;
+		max-height: 625px;
+		width: 50%;
+    margin-bottom: -7px;
+    overflow: hidden;
+
+		&:last-child {
+    	height: 42.1vw;
+			max-height: 575px;
+			width: 100%;
+
+			@include media-query(palm) {
+    		height: 45.7vw;
+			}
+		}
+
+		img {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			height: inherit;
+			width: 100%;
+			transform: translate3d( -50%, -50%, 0) scale3d(1, 1, 1);
+			transition: transform 8s linear;
+		}
+
+		&:hover {
+			img {
+			  transform: translate3d( -50%, -50%, 0) scale3d(1.5, 1.5, 1);
+				transition: transform 24s ease-in-out;
+			}
+		}
+	}
+}

@@ -1,0 +1,123 @@
+/*------------------------------------*\
+    #TEXT
+\*------------------------------------*/
+/* Titles */
+.title {
+	font: 400 30px 'sangbleu_bplight';
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.title--smaller {
+	font-size: 20px;
+}
+
+.title--small {
+	font-size: 28px;
+
+	@include media-query(palm-portrait) {
+		font-size: 20px;
+	}
+}
+
+.title--big {
+	font-size: 35px;
+
+	@include media-query(palm-portrait) {
+		font-size: 25px;
+	}
+}
+
+.title--bigger {
+	font-size: 66px;
+
+	@include media-query(palm-landscape) {
+		font-size: 45px;
+	}
+
+	@include media-query(palm-portrait) {
+		font-size: 30px;
+	}
+}
+
+.title--huge {
+	font-size: 88px;
+
+	@include media-query(lap) {
+		font-size: 66px
+	}
+
+	@include media-query(palm) {
+		font-size: 50px;
+	}
+
+	@include media-query(palm-portrait) {
+		font-size: 34px;
+	}
+}
+
+.title--bold {
+	font-weight: 600;
+}
+
+.title--gold {
+	background: -webkit-linear-gradient(left,  #b09253 0%,#ead3a3 25%,#9e8041 50%,#ead3a3 75%,#b09253 100%); /* Chrome10-25,Safari5.1-6 */
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: $gold-light;
+}
+
+
+/* Text Colors */
+.text-white {
+	color: #fff;
+}
+
+.text-grey {
+	color: $grey-text;
+}
+
+.text-black {
+	color: $grey-dark;
+}
+
+.text-yellow {
+	color: $gold;
+}
+
+.text-yellow-light {
+	color: $gold-light;
+}
+
+
+/* Text Types */
+.text-upper {
+	text-transform: uppercase;
+}
+
+.text-tag {
+	font-size: 12px;
+	font-weight: 900;
+	font-style: italic;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.text-tag--big {
+	font-size: 14px;
+}
+
+.text-thin {
+	font-weight: 300;
+}
+
+.text-subtitle {
+	font-size: 14px;
+	color: $gold;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+
+	@include media-query(palm-portrait) {
+		font-size: 16px;
+	}
+}

@@ -1,0 +1,56 @@
+[21-May-2024 02:06:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_part() in /home/palacioc/public_html/wp/wp-content/themes/palacio-chiado/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/palacioc/public_html/wp/wp-content/themes/palacio-chiado/index.php on line 1
+[24-May-2024 00:19:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_part() in /home/palacioc/public_html/wp/wp-content/themes/palacio-chiado/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/palacioc/public_html/wp/wp-content/themes/palacio-chiado/index.php on line 1
+[27-May-2024 03:18:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_part() in /home/palacioc/public_html/wp/wp-content/themes/palacio-chiado/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/palacioc/public_html/wp/wp-content/themes/palacio-chiado/index.php on line 1
+[28-May-2024 02:14:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_part() in /home/palacioc/public_html/wp/wp-content/themes/palacio-chiado/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/palacioc/public_html/wp/wp-content/themes/palacio-chiado/index.php on line 1
+[30-May-2024 00:43:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_part() in /home/palacioc/public_html/wp/wp-content/themes/palacio-chiado/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/palacioc/public_html/wp/wp-content/themes/palacio-chiado/index.php on line 1
+[31-May-2024 03:24:19 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_part() in /home/palacioc/public_html/wp/wp-content/themes/palacio-chiado/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/palacioc/public_html/wp/wp-content/themes/palacio-chiado/index.php on line 1
+[01-Jun-2024 00:40:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_part() in /home/palacioc/public_html/wp/wp-content/themes/palacio-chiado/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/palacioc/public_html/wp/wp-content/themes/palacio-chiado/index.php on line 1
+[02-Jun-2024 04:05:15 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_part() in /home/palacioc/public_html/wp/wp-content/themes/palacio-chiado/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/palacioc/public_html/wp/wp-content/themes/palacio-chiado/index.php on line 1
+[02-Jun-2024 23:29:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_part() in /home/palacioc/public_html/wp/wp-content/themes/palacio-chiado/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/palacioc/public_html/wp/wp-content/themes/palacio-chiado/index.php on line 1
+[04-Jun-2024 00:57:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_part() in /home/palacioc/public_html/wp/wp-content/themes/palacio-chiado/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/palacioc/public_html/wp/wp-content/themes/palacio-chiado/index.php on line 1
+[04-Jun-2024 00:58:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_part() in /home/palacioc/public_html/wp/wp-content/themes/palacio-chiado/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/palacioc/public_html/wp/wp-content/themes/palacio-chiado/index.php on line 1
+[20-Jun-2024 03:14:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_part() in /home/palacioc/public_html/wp/wp-content/themes/palacio-chiado/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/palacioc/public_html/wp/wp-content/themes/palacio-chiado/index.php on line 1
+[02-Jul-2024 03:02:19 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_part() in /home/palacioc/public_html/wp/wp-content/themes/palacio-chiado/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/palacioc/public_html/wp/wp-content/themes/palacio-chiado/index.php on line 1
+[05-Jul-2024 04:19:19 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_part() in /home/palacioc/public_html/wp/wp-content/themes/palacio-chiado/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/palacioc/public_html/wp/wp-content/themes/palacio-chiado/index.php on line 1

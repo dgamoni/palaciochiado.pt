@@ -1,0 +1,238 @@
+/*------------------------------------*\
+    #MENU
+\*------------------------------------*/
+.menu-container {
+	background: url('../images/menu-bg.png') no-repeat center top / cover;
+  position: relative;
+  margin-top: -60px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  z-index: 1;
+
+	@include media-query(palm) {
+		padding-bottom: 20px;
+	}
+}
+
+	.menu__bg-image {
+		position: absolute;
+	}
+
+	.menu__bg-image--one {
+		top: 0;
+		left: -50px;
+
+		@include media-query(lap) {
+			width: 260px;
+ 		}
+
+		@include media-query(palm) {
+			display: none;
+ 		}
+	}
+
+	.menu__bg-image--two {
+		right: -90px;
+		bottom: -40px;
+
+		@include media-query(portable) {
+			display: none;
+ 		}
+	}
+
+	.menu {
+		max-width: 720px;
+		margin: 0 auto;
+	}
+
+	.menu__head {
+    margin-bottom: 35px;
+		text-align: center;
+	}
+
+		.menu__tabs {
+			margin-bottom: 35px;
+			text-align: center;
+			font-size: 18px;
+			font-weight: 300;
+			text-transform: uppercase;
+			color: $grey-text;
+
+			@include media-query(palm) {
+				font-size: 14px;
+	 		}
+
+			@include media-query(palm-portrait) {
+				font-size: 12px;
+	 		}
+		}
+
+			.menu__category {
+				display: inline-block;
+				vertical-align: top;
+				margin: 0 14px;
+				padding-bottom: 10px;
+				transition: all 0.2s;
+
+				@include media-query(palm) {
+					margin: 0 14px;
+		 		}
+
+				@include media-query(palm-portrait) {
+					margin: 0 5px;
+					padding-bottom: 5px;
+					letter-spacing: 0;
+		 		}
+
+		 		a {
+		 			position: relative;
+		 			padding: 0 4px;
+		 			font-weight: 600;
+					letter-spacing: 1px;
+    			white-space: nowrap;
+					transition: all 0.4s;
+
+		 			&:after {
+		 				content: attr(data-name);
+		 				position: absolute;
+		 				left: 0;
+		 				right: 0;
+		 				margin: auto;
+		 				padding-bottom: 10px;
+						border-bottom: 2px solid $gold-light;
+						font-weight: 900;
+						color: #fff;
+						opacity: 0;
+						transition: all 0.4s;
+		 			}
+		 		}
+
+				&:hover, &.active {
+					a {
+						color: transparent;
+
+						&:after {
+							opacity: 1;
+						}
+					}
+				}
+			}
+
+			.menu__category--dark {
+
+		 		a {
+		 			padding: 0;
+
+		 			&:after {
+						color: $grey-dark;
+		 			}
+		 		}
+			}
+
+		.menu__body {
+			height: 660px;
+		}
+
+			.menu__content {
+				position: relative;
+				display: none;
+				height: 100%;
+
+				&.active {
+					display: block;
+				}
+			}
+
+			.menu__container {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+        opacity: 0;
+        transition: opacity 0.6s;
+
+				&.active {
+          opacity: 1;
+          z-index: 1;
+				}
+			}
+
+			.menu__dish {
+				position: relative;
+				margin-top: 15px;
+				padding: 20px 28px;
+				border: 2px solid transparent;
+				text-align: center;
+				transition: border-color 0.5s;
+
+				@include media-query(palm-portrait) {
+					padding: 10px 15px;
+		 		}
+
+				&:hover {
+					border-color: $gold-light;
+				}
+			}
+
+				.menu__dish-name {
+					font-size: 18px;
+					text-transform: uppercase;
+					font-weight: 700;
+					color: #fff;
+
+					@include media-query(palm-portrait) {
+						font-size: 15px;
+			 		}
+				}
+
+				.menu__dish-description {
+					font-weight: 500;
+					color: $grey-text;
+
+					@include media-query(palm-portrait) {
+						font-size: 14px;
+			 		}
+				}
+
+				/*.menu__dish-price {
+					position: absolute;
+			    top: 35px;
+			    right: 28px;
+					color: $gold-light;
+					font-weight: 700;
+
+					@include media-query(palm-portrait) {
+			    	right: 15px;
+						font-size: 14px;
+			 		}
+				}*/
+
+			.menu__pager {
+		    position: absolute;
+		    bottom: 10px;
+		    width: 100%;
+				height: 28px;
+		    margin-top: 40px;
+		    text-align: center;
+			}
+
+				.menu__pager-item {
+					display: inline-block;
+					width: 28px;
+					margin: 0 2px;
+					color: $grey-text;
+					border: 2px solid transparent;
+					transition: border-color 0.3s;
+					border-radius: 50%;
+
+					&.active, &:hover {
+						color: #fff;
+						border-color: $gold;
+					}
+
+					a {
+						display: block;
+    				font-weight: 500;
+
+					}
+				}

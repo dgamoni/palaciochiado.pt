@@ -1,0 +1,25 @@
+/*------------------------------------*\
+    #MEDIA OBJECT
+\*------------------------------------*/
+.media__img, .media__content {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.media__img {
+	width: 30%;
+
+	@include media-query(palm) {
+		width: 100%;
+	}
+}
+
+.media__content {
+	width: 66%;
+  padding-left: 65px;
+
+	@include media-query(palm) {
+		width: 100%;
+		padding-left: 0;
+	}
+}

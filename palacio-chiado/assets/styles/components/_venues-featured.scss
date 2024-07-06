@@ -1,0 +1,79 @@
+/*------------------------------------*\
+    #VENUES FEATURED
+\*------------------------------------*/
+.venues-featured {
+	position: relative;
+	background-repeat: no-repeat;
+	height: 466px;
+	text-align: center;
+
+	@include media-query(palm) {
+		height: 560px;
+		padding-top: 150px;
+	}
+
+	img {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	h2 {
+		letter-spacing: 8px;
+
+		@include media-query(lap) {
+			letter-spacing: 4px;
+		}
+
+		@include media-query(palm) {
+			letter-spacing: 0px;
+		}
+	}
+
+	h3 {
+		font-weight: 400;
+		letter-spacing: 2px;
+	}
+
+	p {
+		max-width: 500px;
+		margin: 15px auto 40px;
+		color: $grey-text;
+	}
+}
+
+.venues-featured--bars {
+	margin-top: 60px;
+
+	img {
+		bottom: -25px;
+		z-index: -1;
+	}
+}
+
+.venues-featured--restaurants {
+	height: 1020px;
+  padding-top: 625px;
+
+	@include media-query(palm) {
+		height: 840px;
+		padding-top: 480px;
+	}
+
+	img {
+		top: 275px;
+
+		@include media-query(lap) {
+	    top: 240px;
+		}
+
+		@include media-query(palm) {
+	    top: 260px;
+	    width: 320px;
+		}
+
+		@include media-query(palm-portrait) {
+	    top: 250px;
+		}
+	}
+}
