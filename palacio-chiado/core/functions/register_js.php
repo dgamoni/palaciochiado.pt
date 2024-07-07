@@ -3,6 +3,13 @@ function custom_child_scripts() {
 
 
 	wp_enqueue_style(
+		'swiper_style', 
+		CORE_URL . '/css/swiper-bundle.min.css',
+		array(),
+		rand()
+	);
+
+	wp_enqueue_style(
 		'custom_core_style', 
 		CORE_URL . '/css/custom_core_style.css',
 		array(),
@@ -16,10 +23,19 @@ function custom_child_scripts() {
 		rand()
 	);
 
+
+	wp_enqueue_script(
+	    'swiper_js',
+	    CORE_URL . '/js/swiper-bundle.min.js',
+        array('jquery'), 
+        rand(),
+        true  
+	);
+
 	wp_enqueue_script(
 	    'custom_core',
 	    CORE_URL . '/js/custom_core.js',
-        array('jquery'), 
+        array('jquery','swiper_js'), 
         rand(),
         true  
 	);
