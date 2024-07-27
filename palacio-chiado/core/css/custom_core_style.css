@@ -32,3 +32,84 @@
 .swiper-container .center {
     z-index: 2;
 }
+
+.footer__icon {
+    display: none;
+}
+.slider-container--home .slider__title {
+    color: #f6cf70;
+}
+.single-bar .header-bottom__title {
+    color: #f6cf70;
+    font-weight: 600;
+    font-family: sangbleu_bplight;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 35px;
+}
+.page-template-template-room .header-bottom--image h2.header-bottom__title.header-bottom__title--big {
+    color: #f6cf70;
+    font-weight: 600;
+    font-family: sangbleu_bplight;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 35px;
+}
+
+.page-template-template-room .mosaic li {
+/*    height: 384px;*/
+}
+.page-template-template-room .mosaic li:last-child {
+/*    height: 384px;*/
+}
+.page-template-template-room .mosaic img {
+
+}
+.reservations .form__submit {
+    position: relative;
+}
+.reservations .wpcf7-spinner {
+    position: absolute;
+}
+
+.reservations .wpcf7 form.invalid .wpcf7-response-output {
+    display: none;
+}
+.reservations .wpcf7 form.sent .wpcf7-response-output {
+    position: absolute;
+    bottom: 85px;
+    color: white;
+    width: 300px;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

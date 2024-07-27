@@ -6,7 +6,7 @@
 
 <?php while (have_posts()) : the_post(); ?>
 	<section class="header header--history">
-		<p class="title--small text-white text-upper"><?php the_title(); ?></p>
+		<!-- <p class="title--small text-white text-upper"><?php the_title(); ?></p> -->
 		<h2 class="title title--bigger title--gold"><?php the_field('history_subtitle'); ?></h2>
 		<div class="text-grey header--history__text"><?php the_content(); ?></div>
   	<?php get_template_part('templates/partials/scroll'); ?>

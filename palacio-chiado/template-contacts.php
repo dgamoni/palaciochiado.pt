@@ -7,7 +7,7 @@
 <?php while (have_posts()) : the_post(); ?>
 
 <section class="page-contacts" style="background-image: url('<?php the_field('cover_img'); ?>')">
-  <p class="title--small text-white text-upper"><?php _e('O palácio', 'chiado'); ?></p>
+  <!-- <p class="title--small text-white text-upper"><?php _e('O palácio', 'chiado'); ?></p> -->
   <h2 class="title title--bigger title--gold"><?php echo get_the_title(); ?></h2>
 
 	<?php if(have_rows('contacts')): ?>
